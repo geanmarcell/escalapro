@@ -27,10 +27,18 @@ Um sistema completo para gerenciamento de escalas de trabalho com controle de f�
 ![tela_configuração](https://github.com/user-attachments/assets/67f20861-2a18-4165-b39a-9feffef4748a)
 ![escala_excel](https://github.com/user-attachments/assets/94280e72-411e-48e3-b903-b80e485a372c)
 
-## Como Executar
-1. Execulte o executável escalapro.exe
-2. Use as credenciais padrão que serão informadas ao adiquirir o aplicativo.
-3. Ir na aba Configuração e configurar o que for necessário.
+## 💾 Versão Executável
+
+Você pode baixar a versão compilada para Windows [aqui](link_para_download).
+
+### Requisitos do Sistema
+- Windows 7 ou superior
+- .NET Framework 4.5+ (geralmente já instalado)
+
+### Instalação
+1. Baixe o instalador `EscalaPro_Setup.exe`
+2. Execute e siga as instruções
+3. O aplicativo será instalado com ícone no menu Iniciar e área de trabalho
 
 ## Arquitetura do Sistema
 
