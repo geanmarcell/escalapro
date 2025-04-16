@@ -29,7 +29,7 @@ Um sistema completo para gerenciamento de escalas de trabalho com controle de f�
 
 ## 💾 Versão Executável
 
-Você pode baixar a versão compilada para Windows [aqui]([link_para_download](https://drive.google.com/file/d/1dgLAd3-dDR2SWwfuARAGdKq4IBd8ssdA/view?usp=drive_link)).
+Você pode baixar a versão compilada para Windows ([link_para_download](https://drive.google.com/file/d/1dgLAd3-dDR2SWwfuARAGdKq4IBd8ssdA/view?usp=drive_link)).
 
 ### Requisitos do Sistema
 - Windows 7 ou superior
