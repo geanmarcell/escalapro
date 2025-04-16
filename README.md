@@ -32,5 +32,22 @@ Um sistema completo para gerenciamento de escalas de trabalho com controle de f�
 2. Use as credenciais padrão que serão informadas ao adiquirir o aplicativo.
 3. Ir na aba Configuração e configurar o que for necessário.
 
+## Arquitetura do Sistema
+
+### Banco de Dados
+- Tabela `funcionarios`: Armazena todos os dados dos colaboradores
+- Tabela `usuarios`: Gerencia acesso ao sistema
+- Tabela `feriados_regionais`: Armazena feriados personalizados
+
+### Segurança
+- Autenticação com bcrypt e salt
+- Sistema de licenciamento com HMAC-SHA256
+- Backups automáticos
+
+### Funcionalidades Avançadas
+- Cálculo automático de férias vencidas
+- Geração de feriados móveis (Páscoa, Carnaval)
+- Exportação para Excel com formatação profissional
+
 ## Licença
 Este projeto está sob licença MIT.
