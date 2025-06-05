@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EscalaPro - Gestão de Escalas de Trabalho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-header">
+                <img src="logo.png" alt="EscalaPro Logo" class="logo">
+            </div>
+            <div class="hero-content">
+                <h1>Bem-vindo ao EscalaPro</h1>
+                <p>Gerencie escalas de trabalho, funcionários e feriados com facilidade e segurança.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn" onclick="openDemo()">Explorar Demo</a>
+                    <a href="https://x.ai/grok" class="btn">Baixar Agora</a>
+                </div>
+            </div>
+            
+            <!-- Substituindo a imagem única por um slideshow -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="screenshot.png" alt="EscalaPro Interface 1" class="hero-screenshot">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="screenshot2.png" alt="EscalaPro Interface 2" class="hero-screenshot">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="screenshot3.png" alt="EscalaPro Interface 3" class="hero-screenshot">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="screenshot4.png" alt="EscalaPro Interface 2" class="hero-screenshot">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="screenshot5.png" alt="EscalaPro Interface 3" class="hero-screenshot">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="screenshot6.png" alt="EscalaPro Interface 2" class="hero-screenshot">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="screenshot7.png" alt="EscalaPro Interface 3" class="hero-screenshot">
+                </div>        
+
+                <!-- Indicadores de navegação -->
+                <div class="dots-container">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Features -->
+    <section class="features">
+        <div class="container">
+            <h2>Funcionalidades do EscalaPro</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Gestão de Funcionários</h3>
+                    <p>Cadastre, edite e remova funcionários com detalhes como crachá, cargo, setor e escala de trabalho.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Geração de Escalas</h3>
+                    <p>Crie escalas mensais com suporte a folgas, feriados e períodos de férias automaticamente.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Controle de Feriados</h3>
+                    <p>Adicione feriados regionais e nacionais, integrados diretamente nas escalas de trabalho.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Exportação de Dados</h3>
+                    <p>Exporte escalas em Excel e dados de funcionários em CSV para fácil compartilhamento.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Segurança e Permissões</h3>
+                    <p>Autenticação segura com controle de permissões para administradores e usuários.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Backup e Restauração</h3>
+                    <p>Backups automáticos e manuais para proteger seus dados, com restauração flexível.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Demo Interativa -->
+    <section class="demo">
+        <div class="container">
+            <h2>Experimente a EscalaPro</h2>
+            <p>Veja como a EscalaPro organiza suas escalas de trabalho com esta demonstração interativa.</p>
+            <div id="schedule-demo">
+                <table id="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Crachá</th>
+                            <th>Nome</th>
+                            <th>Cargo</th>
+                            <th>Entrada</th>
+                            <th>Saída</th>
+                            <th>01</th>
+                            <th>02</th>
+                            <th>03</th>
+                            <th>04</th>
+                            <th>05</th>
+                        </tr>
+                    </thead>
+                    <tbody id="schedule-body">
+                        <!-- Dados preenchidos via JavaScript -->
+                    </tbody>
+                </table>
+                <div class="demo-controls">
+                    <button onclick="updateSchedule('2025-11')">Novembro 2025</button>
+                    <button onclick="updateSchedule('2025-12')">Dezembro 2025</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-to-action">
+        <div class="container">
+            <h2>Pronto para transformar sua gestão de escalas?</h2>
+            <p>Baixe a EscalaPro agora ou assista ao vídeo de demonstração!</p>
+            <a href="https://x.ai/grok" class="btn">Baixar Agora</a>
+            <a href="#demo-video" class="btn">Ver Vídeo</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Gean Marcell. Todos os direitos reservados.</p>
+            <ul>
+               <li><a href="mailto:geanmcarvalho@live.com">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

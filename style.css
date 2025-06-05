@@ -1,0 +1,364 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Cabeçalho Hero */
+.hero {
+    background: linear-gradient(to right, #4f46e5, #6366f1);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: white;
+    color: #4f46e5;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin: 0 10px;
+}
+
+.btn:hover {
+    background: #e5e5ff;
+}
+
+/* Seção Features */
+.features {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #2d3748;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.feature-item {
+    flex: 1 1 30%;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 280px;
+}
+
+.feature-item h3 {
+    margin-bottom: 10px;
+    color: #4f46e5;
+}
+
+/* Seção Demo */
+.demo {
+    padding: 60px 0;
+    background: #eef2ff;
+    text-align: center;
+}
+
+.demo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.demo p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+#schedule-demo {
+    margin-top: 20px;
+}
+
+#schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#schedule-table th, #schedule-table td {
+    border: 1px solid #d5dce8;
+    padding: 10px;
+    text-align: center;
+}
+
+#schedule-table th {
+    background: #d5dce8;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+#schedule-table td {
+    background: #fff;
+}
+
+#schedule-table .folga {
+    background: #d5f5e3;
+}
+
+#schedule-table .ferias {
+    background: #bdc3c7;
+}
+
+#schedule-table .feriado {
+    background: #fad7a0;
+}
+
+#schedule-table .domingo {
+    background: #ffff00;
+}
+
+.demo-controls {
+    margin-top: 20px;
+}
+
+.demo-controls button {
+    padding: 10px 20px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.demo-controls button:hover {
+    background: #2c3e50;
+}
+
+/* Call to Action */
+.call-to-action {
+    background: #eef2ff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.call-to-action p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Rodapé */
+.footer {
+    background: #2d3748;
+    color: #ccc;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        width: 100%;
+    }
+
+    #schedule-table {
+        font-size: 0.9rem;
+    }
+
+    .demo-controls button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+/* Estilos para o logo e layout da seção hero */
+.hero-header {
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hero-content {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+/* Estilos para o slideshow */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: 20px auto;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mySlides:first-child {
+    display: block;
+}
+
+.hero-screenshot {
+    width: 600px; /* Largura reduzida e fixa */
+    height: 350px; /* Altura reduzida e fixa */
+    object-fit: contain; /* Garante que a imagem inteira seja exibida sem cortes */
+    object-position: center; /* Centraliza a imagem */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo sutil para imagens menores */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Ajuste responsivo para telas menores */
+@media (max-width: 700px) {
+    .hero-screenshot {
+        width: 90%;
+        height: 250px;
+    }
+}
+
+/* Animação de fade */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Estilos para os indicadores de navegação */
+.dots-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-dot {
+    background-color: white;
+}
+
+.hero-screenshot:hover {
+    transform: translateY(-5px);
+}
+
+/* Melhorias visuais gerais */
+.feature-item {
+    flex: 1 1 30%;
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    min-width: 280px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o cabeçalho fixo */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(79, 70, 229, 0.95);
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adicione esta media query para dispositivos móveis */
+@media (max-width: 850px) {
+    .hero-screenshot {
+        width: 100%;
+        height: 350px;
+    }
+}
